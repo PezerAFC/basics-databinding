@@ -1,0 +1,5 @@
+<label>Username</label>
+<p><input type="text" [(ngModel)]="username" (input)="test($event)"></p>
+<p>{{username}}</p>
+<hr>
+<button (click)="resetUser()" [disabled]="!username">Reset User</button>
